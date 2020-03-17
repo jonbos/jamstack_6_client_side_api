@@ -1,0 +1,19 @@
+---
+title: About Like Bikes
+layout: base.njk
+---
+
+<div class="container">
+  <h1>Nunjuck test</h1>
+  <div class="bike">
+    🚲
+  </div>
+  <p>
+    This page was generated from a nunjucks template and created with Eleventy
+  </p>
+  {% for item in news %} 
+  <a href="/{{ item.country }}">{{item.country}}</a>
+{% endfor %}
+
+</div>
+

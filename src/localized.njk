@@ -1,0 +1,33 @@
+---
+title: Dailies
+layout: base.njk
+pagination:
+  data: news
+  size: 1
+  alias: news
+permalink: /{{ news.country }}/index.html
+---
+
+<div class="container">
+  <h1>Do you like my bike?</h1>
+  <div class="bike">
+    🚲
+  </div>
+  <div class="brag">
+    <small class="inject"></small>
+  </div>
+  <ul>
+    {% for article in news.articles %}
+    <li>
+      <h2>
+        <a href="{{ article.url }}">{{ article.title }}</a>
+      </h2>
+    </li>
+    <span
+      >{{ article.source.name }} - <time>{{ article.publishedAt }}</time>
+    </span>
+    {% endfor %}
+  </ul>
+</div>
+<script src="" async defer></script>
+<script src="./js/brag.js"></script>
