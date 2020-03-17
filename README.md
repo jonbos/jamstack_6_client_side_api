@@ -1,0 +1,1 @@
+# Example Six - Client Side API w/ Progressive Enhancement
